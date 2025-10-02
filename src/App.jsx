@@ -311,34 +311,53 @@ function App() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
+            {/* Testimonials Section */}
       <section className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-5xl font-bold text-blue-900 mb-16 text-center">
             Why Clients Love My Work
           </h2>
           
-          <div className="grid md:grid-cols-1 gap-8">
-            {[1, 2, 3].map((_, index) => (
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                name: "Alle Iradukunda",
+                role: "CEO - Eccelenza Technology",
+                message:
+                  "Working with Peace was an excellent experience. The attention to detail and commitment to delivering high-quality work exceeded our DevOps expectations."
+              },
+              {
+                name: "Mucyo Ivan",
+                role: "CEO - DerraliEngineering Company",
+                message:
+                  "Peace helped us scale our infrastructure seamlessly. The professionalism and expertise brought so much value to our company."
+              },
+              {
+                name: "Asaph Twahirwa",
+                role: "Founder - Startup Hub",
+                message:
+                  "I was impressed by the fast delivery and clean solutions. Peace goes above and beyond to ensure client satisfaction."
+              }
+            ].map((testimonial, index) => (
               <div key={index} className="bg-gray-50 p-8 rounded-3xl shadow-xl">
                 <div className="flex items-center gap-4 mb-6">
                   <div className="bg-blue-900 w-16 h-16 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg">
                     {String.fromCharCode(65 + index)}
                   </div>
                   <div>
-                    <h4 className="text-xl font-semibold text-blue-900">Alle Iradukunda</h4>
-                    <p className="text-blue-700">CEO - Eccelenza Technology</p>
+                    <h4 className="text-xl font-semibold text-blue-900">{testimonial.name}</h4>
+                    <p className="text-blue-700">{testimonial.role}</p>
                   </div>
                 </div>
                 <p className="text-blue-800 text-lg font-light italic">
-                  "Working with Peace was an excellent experience. The attention to detail 
-                  and commitment to delivering high-quality work exceeded our Devops expectations."
+                  "{testimonial.message}"
                 </p>
               </div>
             ))}
           </div>
         </div>
       </section>
+
 
       {/* Contact Section */}
       <section className="py-20 px-4 bg-gray-50">

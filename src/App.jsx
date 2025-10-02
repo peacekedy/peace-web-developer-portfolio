@@ -318,7 +318,7 @@ function App() {
             Why Clients Love My Work
           </h2>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-1 gap-8">
             {[1, 2, 3].map((_, index) => (
               <div key={index} className="bg-gray-50 p-8 rounded-3xl shadow-xl">
                 <div className="flex items-center gap-4 mb-6">
@@ -327,12 +327,12 @@ function App() {
                   </div>
                   <div>
                     <h4 className="text-xl font-semibold text-blue-900">Alle Iradukunda</h4>
-                    <p className="text-blue-700">CEO - Elevate</p>
+                    <p className="text-blue-700">CEO - Eccelenza Technology</p>
                   </div>
                 </div>
                 <p className="text-blue-800 text-lg font-light italic">
                   "Working with Peace was an excellent experience. The attention to detail 
-                  and commitment to delivering high-quality work exceeded our expectations."
+                  and commitment to delivering high-quality work exceeded our Devops expectations."
                 </p>
               </div>
             ))}

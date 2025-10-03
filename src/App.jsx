@@ -371,7 +371,7 @@ function App() {
           
           <div className="bg-white p-8 rounded-3xl mb-12 shadow-2xl">
             <form
-              action="https://formspree.io/f/xdkeprdw" 
+              action="https://formspree.io/f/mdkwzypp" 
               method="POST"
               className="grid md:grid-cols-2 gap-6"
             >
